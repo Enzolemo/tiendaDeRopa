@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/logoempresafinal.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>For Us - Contacto</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../imagenes/logoempresafinal.png" alt="LogoForUs" height="70" width="70"></a>
+        <nav>
+            <ul class="barraNavegacion">
+                <li class="navegadorIndex"><a href="../index.html">Inicio</a></li>
+                <li class="navegadorAdultos"><a href="./adultos.html">Adultos</a></li>
+                <li class="navegadorInfantil"><a href="./infantil.html">Infantil</a></li>
+                <li class="navegadorQuienesSomos"><a href="./quienesSomos.html">Quienes somos</a></li>
+                <li class="navegadorContacto"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <p class="imagenCabezera">
+                <img src="../imagenes/devolucionesResponsive.png" alt="devoluciones free">
+            </p>
+        </section>
+        <section class="contenedor-formContacto">
+            <h4>Queremos escucharte</h4>
+            <form class="formulario-contacto" action="procesar.php" name="formulario_contacto" method="post">
+                <p>
+                    <label for="nombre-completo">Nombre completo</label>
+                    <input type="text" name="nombre-completo" placeholder="Patricio Gomez">
+                </p>
+                <p>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" name="correo" placeholder="ForUs@contacto.com" required>
+                </p>
+                <p>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" placeholder="+549-11758235">
+                </p>
+                <p> Motivo de su contacto
+                    <select name="motivo">
+                        <option value="duda">Duda</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mensaje">Detalle</label>
+                    <input type="text" name="mansaje" required>
+                </p>
+                <p class="botonContacto">
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </section>
+        <section>
+            <ul>
+                <li>Correo de contacto: ForUs@contacto.com</li>
+                <li>Teléfono de contacto: +54-11677859</li>
+                <li>Ubicación oficina CABA: San Luis 1298</li>
+            </ul>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam reiciendis quisquam cumque nobis!
+                Libero ratione vitae nesciunt odio commodi perferendis quidem in reprehenderit odit facere
+                praesentium ullam iste, nostrum, molestias dolore nihil animi at, rerum amet ea a eaque. Illum fuga
+                neque quasi natus velit minima inventore esse. Soluta, eligendi?</p>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">WhatsApp</a></li>
+            </ul>
+        </div>
+        <p>Desarrollado por Enzo Magallanes 2022</p>
+    </footer>
+</body>
+
+</html>

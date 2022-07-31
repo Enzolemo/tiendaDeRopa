@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/logoempresafinal.png" type="image/x-icon">
+    <title>For Us - Inicio</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./imagenes/logoempresafinal.png" alt="LogoForUs" height="70" width="70"></a>
+        <nav>
+            <ul class="barraNavegacion">
+                <li class="navegadorIndex"><a href="./index.html">Inicio</a></li>
+                <li class="navegadorAdultos"><a href="./paginas/adultos.html">Adultos</a></li>
+                <li class="navegadorInfantil"><a href="./paginas/infantil.html">Infantil</a></li>
+                <li class="navegadorQuienesSomos"><a href="./paginas/quienesSomos.html">Quienes somos</a></li>
+                <li class="navegadorContacto"><a href="./paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <p class="imagenCabezera">
+                <img src="./imagenes/devolucionesResponsive.png" alt="devoluciones free">
+            </p>
+        </section>
+        <section class="destacadoIndex">
+            <article>
+                <p> <b>TODO A MITAD DE PRECIO </b></p>
+                <img src="./imagenes/50Off.jpg" height="100px" width="100px" alt="">
+                <button class="botonIndex">Descubrí ahora</button>
+            </article>
+            <article>
+                <p> <b>LO MAS VENDIDO</b> </p>
+                <img src="./imagenes/loMasVendido.jpg" height="100px" width="100px" alt="">
+                <button class="botonIndex">Descubrí ahora</button>
+            </article>
+            <article>
+                <p><b>REVIVI LA TEMPORADA PASADA</b></p>
+                <img src="./imagenes/temporadaPasada.jpg" height="100px" width="100px" alt="">
+                <button class="botonIndex">Descubrí ahora</button>
+            </article>
+        </section>
+
+        <section>
+            <form action="procesar.php" name="Contactox" method="post">
+                <legend>Suscribite a nuestro Newsletter</legend>
+                <label>Email</label>
+                <input type="email" name="Email" placeholder="Forus@contacto.com" required>
+                <h6>Deseo recibir información de:</h6>
+                <label for="Deseo recibir información de">Adulto</label>
+                <input type="checkbox" name="Deseo recibir información de" value="Adulto">
+                <label>Infantil</label>
+                <input type="checkbox" name="Deseo recibir información de" value="Infantil">
+                <button class="botonIndex" type="submit">Solicitar</button>
+            </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">WhatsApp</a></li>
+            </ul>
+        </div>
+        <p>Desarrollado por Enzo Magallanes 2022</p>
+    </footer>
+
+</body>
+
+</html>
