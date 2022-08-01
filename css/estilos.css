@@ -4,31 +4,18 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    background-color: cadetblue;
-    border: 5px solid black;
-    padding: 10px;
-    margin: 0px;
+header nav div img{
+    height: 50px;
+    width: 50px;
 }
 
-.barraNavegacion {
-    font-size: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 100%;
+nav{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    color: black;
 }
 
-.barraNavegacion>* {
-    padding: 10px;
-    margin: 10px;
-    border: 5px solid black;
-    border-radius: 20px;
-    background-color: rgb(118, 221, 118);
+.navbar-expand-lg .navbar-collapse {
+    flex-grow: initial;
 }
 
 .imagenCabezera {
@@ -78,6 +65,11 @@ footer p {
     justify-content: end;
     margin-top: 10px;
     font-size: 10px;
+}
+
+i{
+    font-size: 2rem;
+    color: #0d8c68;
 }
 
 /*INDEX*/
