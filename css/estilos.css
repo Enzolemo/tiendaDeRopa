@@ -1,233 +1,212 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header nav div img{
-    height: 50px;
-    width: 50px;
+header nav div img {
+  height: 50px;
+  width: 50px;
 }
 
-nav{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
-    color: black;
+nav {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(14, 174, 87) 0%, rgb(12, 116, 117) 90%);
+  color: black;
 }
 
 .navbar-expand-lg .navbar-collapse {
-    flex-grow: initial;
+  flex-grow: initial;
 }
 
 .imagenCabezera {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 body {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
-    color: black;
-    margin: 10px;
-    font-size: 15px;
-
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(14, 174, 87) 0%, rgb(12, 116, 117) 90%);
+  color: black;
+  margin: 10px;
+  font-size: 15px;
 }
 
 form {
-    margin: 0px;
-    padding: 10px;
-    color: black;
-    font-weight: bold;
-    border: 4px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin: 0px;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  border: 4px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 footer {
-    margin: 10px;
-    color: white;
-    padding: 10px;
-    background-color: black;
+  margin: 10px;
+  color: white;
+  padding: 10px;
+  background-color: black;
 }
 
 footer ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 
 footer p {
-    display: flex;
-    justify-content: end;
-    margin-top: 10px;
-    font-size: 10px;
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  font-size: 10px;
 }
 
-i{
-    font-size: 2rem;
-    color: #0d8c68;
+i {
+  font-size: 2rem;
+  color: #0d8c68;
 }
 
 /*INDEX*/
-
 .destacadoIndex {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .botonIndex {
-    display: block;
-    margin-top: 5px;
-    transition: all 1s;
+  display: block;
+  margin-top: 5px;
+  transition: all 1s;
 }
 
-.botonIndex:hover{
-    background-color: grey;
+.botonIndex:hover {
+  background-color: grey;
 }
 
-.imagenIndex{
-    transition: all 1s;
+.imagenIndex {
+  transition: all 1s;
 }
 
-.imagenIndex:hover{
-    height: 110px;
-    width: 110px;
+.imagenIndex:hover {
+  height: 110px;
+  width: 110px;
 }
 
 /*ADULTOS*/
-
-.imagenAdultos{
-    transition: all 1s;
+.imagenAdultos {
+  transition: all 1s;
 }
 
-.imagenAdultos:hover{
-    width: 160px;
-    height: 160px;
+.imagenAdultos:hover {
+  width: 160px;
+  height: 160px;
 }
 
 /*INFANTIL*/
-
-.imagenInfantil{
-    transition: all 1s;
+.imagenInfantil {
+  transition: all 1s;
 }
 
-.imagenInfantil:hover{
-    width: 180px;
-    height: 180px;
+.imagenInfantil:hover {
+  width: 180px;
+  height: 180px;
 }
 
 /* QUIENES SOMOS */
 .destacadoQuienesSomos {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    grid-column-gap: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-column-gap: 55px;
 }
 
 .titulosQuienesSomos {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 /* CONTACTO */
-
 .contenedor-formContacto {
-    color: white;
-    background-color: black;
-    margin: 10px;
-    padding: 10px;
+  color: white;
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
 }
 
 .contenedor-formContacto h4 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .formulario-contacto {
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .botonContacto {
-    display: grid;
-    grid-column: 1/3;
-    color: white;
-    border: 0;
-    padding: 1rem;
+  display: grid;
+  grid-column: 1/3;
+  color: white;
+  border: 0;
+  padding: 1rem;
 }
 
 .formulario-contacto p button {
-    background-color: rgb(118, 221, 118);
-    text-transform: uppercase;
-    font-weight: bold;
+  background-color: rgb(118, 221, 118);
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .formulario-contacto p {
-    margin: 2px;
-    padding: 5px;
+  margin: 2px;
+  padding: 5px;
 }
 
 .formulario-contacto button,
 .formulario-contacto input,
 .formulario-contacto textarea {
-    width: 100%;
-    padding: .7rem;
-    border: none;
-    background-color: black;
-    outline: none;
-    border-bottom: 1px solid rgb(118, 221, 118);
-    color: white;
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  background-color: black;
+  outline: none;
+  border-bottom: 1px solid rgb(118, 221, 118);
+  color: white;
 }
 
 /*MEDIA QUERIES*/
-
-@media only screen and (max-width:768px) {
-    
-}
-
-@media only screen and (max-width:576px) {
-
-    header {
-        flex-direction: column;
-    }
-
-    header nav ul li {
-        font-size: 15px;
-        width: auto;
-    }
-
-    header nav {
-        height: 10%;
-        width: 100%;
-    }
-
-    .imagenCabezera img {
-        height: 60px;
-    }
-
-    .destacadoIndex{
-        display: grid;
-        grid-template-columns: 1; 
-        grid-template-rows: repeat(3,1fr);
-        
-    }
-
-    .destacadoIndex article{
-        justify-content: center;
-    }
-
-    .destacadoQuienesSomos{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
+@media only screen and (max-width: 576px) {
+  header {
+    flex-direction: column;
+  }
+  header nav ul li {
+    font-size: 15px;
+    width: auto;
+  }
+  header nav {
+    height: 10%;
+    width: 100%;
+  }
+  .imagenCabezera img {
+    height: 60px;
+  }
+  .destacadoIndex {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .destacadoIndex article {
+    justify-content: center;
+  }
+  .destacadoQuienesSomos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=estilos.css.map */
