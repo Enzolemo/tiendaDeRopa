@@ -19,9 +19,17 @@ header nav div img{
 }
 
 nav{
-    background-image: $background
+    background-image: $background;
     color: black;
 }
+
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            color: black;
+        }
+    } 
+} 
 
 .navbar-expand-lg .navbar-collapse {
     flex-grow: initial;
@@ -36,7 +44,7 @@ nav{
 
 
 body {
-    background-image: $background
+    background-image: $background;
     color: black;
     margin: 10px;
     font-size: 15px;
