@@ -7,7 +7,8 @@
 //VARIABLES
 
 $colorFondo: radial-gradient(circle farthest-corner at 10% 20%, #0eae57 0%, #0c7475 90%);
-$colorPrueba: red;
+$colorFonts: black;
+$medidaEstandar: 10px;
 
 header nav div img {
   height: 50px;
@@ -15,7 +16,11 @@ header nav div img {
 }
 
 nav {
-  background-image: $colorFondo;
+  @if ($colorFondo == yellow){
+    background-image: yellow;
+  } @else {
+    background-image: $colorFondo;
+  }
   color: black;
 }
 
@@ -25,7 +30,7 @@ nav {
 
     .nav-link {
 
-      color: black;
+      color: $colorFonts;
     }
 
   }
@@ -44,26 +49,26 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: $medidaEstandar * 2;
   font-size: 30px;
   text-align: center;
 }
 
 body {
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(14, 174, 87) 0%, rgb(12, 116, 117) 90%);
+  background-image: $colorFondo;
   color: black;
-  margin: 10px;
+  margin: $medidaEstandar;
   font-size: 15px;
 }
 
 form {
   margin: 0px;
-  padding: 10px;
-  color: black;
+  padding: $medidaEstandar;
+  color: $colorFonts;
   font-weight: bold;
-  border: 4px solid black;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border: 4px solid $colorFonts;
+  margin-top: $medidaEstandar * 2;
+  margin-bottom: $medidaEstandar * 2;
 }
 
 ul {
@@ -71,10 +76,10 @@ ul {
 }
 
 footer {
-  margin: 10px;
+  margin: $medidaEstandar;
   color: white;
-  padding: 10px;
-  background-color: black;
+  padding: $medidaEstandar;
+  background-color: $colorFonts;
 }
 
 footer {
@@ -88,8 +93,8 @@ footer {
 footer p {
   display: flex;
   justify-content: end;
-  margin-top: 10px;
-  font-size: 10px;
+  margin-top: $medidaEstandar;
+  font-size: $medidaEstandar;
 }
 
 i {
@@ -152,7 +157,7 @@ i {
 }
 
 .titulosQuienesSomos {
-  font-size: 30px;
+  font-size: $medidaEstandar * 3;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -161,9 +166,9 @@ i {
 /* CONTACTO */
 .contenedor-formContacto {
   color: white;
-  background-color: black;
-  margin: 10px;
-  padding: 10px;
+  background-color: $colorFonts;
+  margin: $medidaEstandar;
+  padding: $medidaEstandar;
 }
 
 .contenedor-formContacto h4 {
@@ -193,7 +198,7 @@ i {
 
 .formulario-contacto p {
   margin: 2px;
-  padding: 5px;
+  padding: $medidaEstandar / 2;
 }
 
 .formulario-contacto button,
@@ -202,7 +207,7 @@ i {
   width: 100%;
   padding: 0.7rem;
   border: none;
-  background-color: black;
+  background-color: $colorFonts;
   outline: none;
   border-bottom: 1px solid rgb(118, 221, 118);
   color: white;
