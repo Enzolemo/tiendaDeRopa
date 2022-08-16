@@ -8,6 +8,7 @@
 
 $colorFondo: radial-gradient(circle farthest-corner at 10% 20%, #0eae57 0%, #0c7475 90%);
 $colorPrueba: red;
+
 header nav div img {
   height: 50px;
   width: 50px;
@@ -76,10 +77,12 @@ footer {
   background-color: black;
 }
 
-footer ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+footer {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
 }
 
 footer p {
