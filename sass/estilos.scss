@@ -64,6 +64,13 @@ nav {
 
 }
 
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
 .imagenCabezera {
   display: flex;
   justify-content: map-get($map: $estilosGenerales, $key: centro);

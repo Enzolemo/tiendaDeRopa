@@ -17,6 +17,12 @@ nav {
 .navbar-expand-lg .navbar-collapse {
   flex-grow: initial; }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
+
 .imagenCabezera {
   display: flex;
   justify-content: center;
