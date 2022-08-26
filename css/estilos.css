@@ -21,7 +21,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-align: center; }
 
 .imagenCabezera {
   display: flex;
@@ -76,6 +77,9 @@ i {
   justify-content: space-around;
   flex-wrap: wrap; }
 
+.subdesIndex {
+  margin: 20px; }
+
 .botonIndex {
   display: block;
   margin-top: 5px;
@@ -90,6 +94,10 @@ i {
 .imagenIndex:hover {
   height: 110px;
   width: 110px; }
+
+.contenedorNewsletter {
+  padding: 20px;
+  margin: 20px; }
 
 /*ADULTOS*/
 .imagenAdultos {
@@ -109,10 +117,12 @@ i {
 
 /* QUIENES SOMOS */
 .destacadoQuienesSomos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  grid-column-gap: 55px; }
+  display: flex;
+  flex-direction: column; }
+
+.subdesQuienesSomos {
+  display: flex;
+  flex-direction: row; }
 
 .titulosQuienesSomos {
   font-size: 30px;
@@ -181,7 +191,13 @@ i {
     grid-template-rows: repeat(3, 1fr); }
   .destacadoIndex article {
     justify-content: center; }
+  .subdesAdultos {
+    margin: 20px; }
+  .subdesInfa {
+    margin: 20px; }
   .destacadoQuienesSomos {
-    grid-template-columns: repeat(1, 1fr); } }
+    flex-direction: column; }
+  .subdesQuienesSomos {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=estilos.css.map */

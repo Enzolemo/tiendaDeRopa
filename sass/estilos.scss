@@ -16,10 +16,11 @@ $colorFonts: black;
 $medidaEstandar: 10px;
 //EXTENSIONES 
 
-.medidasPrueba50{
+.medidasPrueba50 {
   height: 50px;
   width: 50px;
 }
+
 //MIXINS
 
 @mixin sizes($width, $height) {
@@ -64,11 +65,12 @@ nav {
 
 }
 
-h1{
+h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .imagenCabezera {
@@ -135,6 +137,10 @@ i {
   flex-wrap: wrap;
 }
 
+.subdesIndex{
+margin: $medidaEstandar * 2;
+}
+
 .botonIndex {
   display: block;
   margin-top: 5px;
@@ -152,6 +158,11 @@ i {
 .imagenIndex:hover {
   height: 110px;
   width: 110px;
+}
+
+.contenedorNewsletter {
+  padding: 20px;
+  margin: 20px;
 }
 
 /*ADULTOS*/
@@ -174,19 +185,24 @@ i {
 }
 
 /* QUIENES SOMOS */
+
 .destacadoQuienesSomos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  grid-column-gap: 55px;
+  display: flex;
+  flex-direction: column;
 }
 
+.subdesQuienesSomos{
+ display: flex;
+ flex-direction: row;
+
+
+}
 .titulosQuienesSomos {
   font-size: $medidaEstandar * 3;
   display: flex;
   justify-content: center;
   text-align: center;
-} 
+}
 
 /* CONTACTO */
 .contenedor-formContacto {
@@ -268,9 +284,20 @@ i {
     justify-content: center;
   }
 
-  .destacadoQuienesSomos {
-    grid-template-columns: repeat(1, 1fr);
+  .subdesAdultos{
+    margin: $medidaEstandar * 2;
   }
+
+  .subdesInfa{
+    margin: $medidaEstandar * 2;
+  }
+
+ .destacadoQuienesSomos{
+  flex-direction: column;
+ }
+ .subdesQuienesSomos{
+  flex-direction: column;
+ }
 }
 
 /*# sourceMappingURL=estilos.css.map */
