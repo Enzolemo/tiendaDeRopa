@@ -34,7 +34,7 @@ function nuevo_usuario() {
 
     arreglo_usuarios.push(usuario);
 
-    if (localStorage.length != 0) {
+    if (localStorage.getItem('usuarios') != null ) {
 
         let recuperando_arreglo = localStorage.getItem("usuarios");
         recuperando_arreglo = JSON.parse(recuperando_arreglo);
@@ -42,7 +42,7 @@ function nuevo_usuario() {
 
         function validar_usuario(usuario) {
 
-            return usuario.nombre == recuperando_arreglo.nombre
+            return usuario.nombre == arreglo_usuarios.nombre
         }
 
         let resultadoFind = recuperando_arreglo.find(validar_usuario);
