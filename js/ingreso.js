@@ -11,12 +11,22 @@ function validar_usuario() {
         if (nombre_usuario.value == usuario.nombre && pass.value == usuario.pass) {
 
            let redireccion_index = document.getElementById("redireccion_index");
-           redireccion_index.innerHTML = "<button><a href='../index.html'>INICIAR SESION</a></button>"
+           redireccion_index.innerHTML = Swal.fire({
+            icon: "success",
+            title: "Bienvenido/a" ,
+            text: "No hay internet",
+            confirmButtonText: "<a href='../index.html'>Iniciar sesión</a>",
+           });
 
             
         }
         else{
-            console.log("usuario incorrecto")
+            Swal.fire({
+                icon: "error",
+                title: "Usuario no registrado",
+                text: "Revise que su usuario y contraseña esten bien escritos, o cree un usuario y contraseña si no tiene uno para poder ingresar"
+
+            })
         }
     }
 }
