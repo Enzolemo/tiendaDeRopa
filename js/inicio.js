@@ -21,3 +21,29 @@ info_tarjetas.map((x)=>{
       </article>
     `;
 })
+
+let api_key = "f6500d9f957da26645433da7818c1105";
+
+navigator.geolocation.getCurrentPosition(showPosition)
+
+function showPosition(position){
+
+
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+
+    fetch ("https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&lang=es&units=metric&appid="+api_key)
+    .then(response=>response.json())
+    .then(data=>{
+        let padre = document.getElementById("contenedor_clima");
+        let clima = document.createElement("div");
+        clima.innerHTML = `<p><b>Ciudad: ${data.name}</b></p>
+                            <p><b>Estado del clima: ${data.weather[0].description}</b></p>
+                            <p><b>Temperatura actual: ${data.main.temp}°</b></p>
+                            <p><b>Temperatura maxima: ${data.main.temp_max}°</b></p>
+                            <p><b>Temperatura minima: ${data.main.temp_min}°</b></p>`
+
+        padre.append(clima);
+    })
+    
+}

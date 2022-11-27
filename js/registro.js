@@ -1,4 +1,4 @@
-/*
+/* registro sin validación
 let btn_registro = document.getElementById("btn_registro");
 
 let arreglo_usuarios = [];
@@ -20,7 +20,7 @@ function nuevo_usuario() {
 btn_registro.addEventListener("click" , nuevo_usuario);
 */
 
-
+//Registro con validacion 
 let btn_registro = document.getElementById("btn_registro");
 
 let arreglo_usuarios = [];
@@ -34,19 +34,22 @@ function nuevo_usuario() {
 
     arreglo_usuarios.push(usuario);
 
+    function validar_usuario(usuario) {
+
+        return usuario.nombre == usuario.nombre
+    }
+
     if (localStorage.getItem('usuarios') != null ) {
 
         let recuperando_arreglo = localStorage.getItem("usuarios");
         recuperando_arreglo = JSON.parse(recuperando_arreglo);
         console.log(recuperando_arreglo);
 
-        function validar_usuario(usuario) {
-
-            return usuario.nombre == arreglo_usuarios.nombre
-        }
+        
 
         let resultadoFind = recuperando_arreglo.find(validar_usuario);
-        console.log(resultadoFind);
+        
+
         if (resultadoFind = arreglo_usuarios) {
           
             Swal.fire({
